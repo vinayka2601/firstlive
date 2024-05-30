@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gilroy';
+    box-sizing: border-box;
+}
+html,body{
+   height: 100%;
+   width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color:#fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    display:flex;
+    padding: 0 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav>h1{
+    font-size: 35px;
+    font-weight: 200;
+    cursor: pointer;
+}
+#nav #part2{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav #part2 a{
+    text-decoration: none;
+    color: #222;
+    margin: 20px;
+}
+#nav #part2 a:nth-last-child(1){
+    padding:7px 18px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    border:1px solid black;
+
+}
+#nav #part2 a:nth-last-child(1) #green{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: springgreen;
+    top:0;
+    left:-100%;
+    transition: left 0.4s ease ;
+}
+#nav #part2 a:nth-last-child(1):hover #green{
+  left:0;
+}
+#nav #part2 a:nth-last-child(1) h4{
+    font-weight: 100;
+    position: relative;
+    z-index: 99;
+}
+#nav #part2 a:nth-last-child(1) h4 i{
+    padding-left: 10px;
+    font-size: 16px;
+}
+#main>h1{
+    font-size: 5.4vw;
+    font-weight: 100;
+    text-align: center;
+    width: 60%;
+    z-index: 99;
+    position: absolute;
+    text-transform: capitalize;
+}
+ #main #img1{
+    height: 500px;
+    position: absolute;
+    width: 360px;
+    left:7%;
+    top:15%;
+}
+ #main #img2{
+    height: 210px;
+    position: absolute;
+    width: 230px;
+    left:60%;
+    top:18%;
+ } 
+#main #img3{
+    height: 280px;
+    position: relative;
+    width: 260px;
+    left:28%;
+    top:25%;
+} 
+ /* #main img{
+    transition: margin 0.4s ease;
+}
+ #main img :hover{
+    margin-top:-20px ; 
+}*/
+#main>h2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 69%;
+}
+#find{
+  margin-left: 6px;
+    padding:7px 18px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    border:1px solid black;
+
+}
+#find #green2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: springgreen;
+    top:0;
+    left:-100%;
+    transition: left 0.4s ease ;
+}
